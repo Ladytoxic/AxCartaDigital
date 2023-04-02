@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d8d8d883;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+header {
+    min-height: 30%;
+    position: relative;
+}
+
+header h1 {
+    font-family: Comforter Brush, cursive;
+    text-align: center;
+    font-size: 4rem;
+}
+
+header img {
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    padding: 1rem;
+    object-fit: contain;
+}
+
+nav {
+    background-color: #1a1a1a;
+    color: #e9e9e9ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    box-shadow: 0px 1px 2px;
+}
+
+nav span {
+    font-family: Comforter Brush, cursive;
+    font-size: 2rem;
+}
+
+main {
+    margin: 1rem;
+}
+
+section {
+    margin: auto;
+}
+
+section.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.progress {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    z-index: 100;
+}
+
+.card {
+    background-color: #f3f3f3;
+    padding: 0.5rem;
+    width: 290px;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem;
+}
+
+.card h2 {
+    font-family: Fredericka the Great, cursive;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: #1a1a1a dashed 1px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item div {
+    text-align: left;
+}
+
+.item p {
+    font-style: italic;
+}
+
+.item .precio {
+    text-align: right;
+    padding-left: 0.5rem;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+.insta {
+    background-image: url(./icons8-instagram-144.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(./icons8-facebook-rodeado-de-círculo-144.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 665px) {
+    .card {
+        width: 320px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: auto;
+    }
+}
+
+
+
+.fade-in {
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
