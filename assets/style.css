@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 
 * {
     margin: 0;
@@ -13,8 +13,8 @@ html {
 }
 
 body {
-    background-color: #d8d8d883;
-    color: #1a1a1a;
+
+
     letter-spacing: 1px;
 }
 
@@ -38,13 +38,13 @@ header img {
 }
 
 nav {
-    background-color: #1a1a1a;
+    background: #401809;
     color: #e9e9e9ec;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    box-shadow: 0px 1px 2px;
+    box-shadow: 0px 1px 11px 3px rgba(34, 60, 80, 0.1);
 }
 
 nav span {
@@ -63,7 +63,7 @@ section {
 section.cards {
     display: flex;
     justify-content: center;
-    align-self:stretch ;
+    align-self: stretch;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem;
@@ -83,23 +83,24 @@ section.cards {
 }
 
 .card {
-    background-color: #f3f3f3;
-    padding: 0.5rem;
     width: 400px;
-    border: 1px black solid;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px -1px 11px 3px rgba(34, 60, 80, 0.1);
 }
 
 .card h2 {
-    font-family: Fredericka the Great, cursive;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: #401809;
+    color: #fdfcfb;
     text-align: center;
+    padding: 1rem;
     margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .card ul {
     list-style: none;
+    padding: 0.5rem;
 }
 
 .card li {
@@ -170,6 +171,7 @@ footer a:hover {
     section.cards {
         align-self: flex-start;
     }
+
     .card {
         width: 320px;
     }
